@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# VSCode settings
+.vscode/
+
+# Build output
+dist/
+build/
+
+# SASS cache
+.sass-cache/
+
+# Environment files
+.env
+.env.*
+
+# Mac system files
+Icon?
+
+# Windows system files
+Desktop.ini
