@@ -14,6 +14,7 @@ body {
   overflow: hidden;
   border-bottom: 1px solid #eee;
 }
+
 .logo {
   width: 282px;
   height: 90px;
@@ -25,6 +26,7 @@ body {
   font-weight: 400;
   color: #000;
 }
+
 .search-bar {
   width: 570px;
   height: 55px;
@@ -35,6 +37,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .top10 {
   width: 143px;
   height: 55px;
@@ -45,11 +48,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .header-btns {
   display: flex;
   gap: 10px;
   margin-left: 20px;
 }
+
 .header-btns button {
   width: 77px;
   height: 34px;
@@ -59,6 +64,7 @@ body {
   font-size: 16px;
   color: #333;
 }
+
 .header-icons {
   display: flex;
   gap: 10px;
@@ -67,6 +73,7 @@ body {
   font-size: 5%;
   font-family: sans-serif;
 }
+
 .icon {
   width: 48px;
   height: 48px;
@@ -85,8 +92,11 @@ main {
   background: #F7F7F7;
   min-height: 2000px;
 }
-.content1, .content2, .content3{
-    margin-top: 140px;
+
+.content1,
+.content2,
+.content3 {
+  margin-top: 140px;
 }
 
 .visual {
@@ -99,6 +109,7 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .visual .arrow {
   position: absolute;
   top: 50%;
@@ -109,8 +120,15 @@ main {
   color: #333;
   z-index: 2;
 }
-.visual .arrow.left { left: 40px; }
-.visual .arrow.right { right: 40px; }
+
+.visual .arrow.left {
+  left: 40px;
+}
+
+.visual .arrow.right {
+  right: 40px;
+}
+
 .visual-text {
   width: 409px;
   height: 534px;
@@ -125,6 +143,7 @@ main {
   font-weight: 900;
   color: #333;
 }
+
 .visual-dots {
   position: absolute;
   bottom: 60px;
@@ -133,6 +152,7 @@ main {
   display: flex;
   gap: 20px;
 }
+
 .visual-dots span {
   width: 12px;
   height: 12px;
@@ -148,6 +168,7 @@ main {
   gap: 20px;
   justify-content: center;
 }
+
 .category {
   width: 220px;
   height: 45px;
@@ -167,6 +188,7 @@ main {
   gap: 20px;
   justify-content: center;
 }
+
 .gallery-img {
   width: 300px;
   height: 300px;
@@ -174,12 +196,14 @@ main {
   border: 1px solid #bbb;
   position: relative;
 }
+
 .button-row {
   width: 942px;
   margin: 30px auto 0 auto;
   display: flex;
   justify-content: center;
 }
+
 .button-row button {
   width: 378px;
   height: 55px;
@@ -197,6 +221,7 @@ main {
   gap: 10px;
   justify-content: center;
 }
+
 .week {
   width: 150px;
   height: 90px;
@@ -208,6 +233,7 @@ main {
   font-size: 16px;
   color: #000;
 }
+
 .week1 {
   background: #EFB25C;
 }
@@ -225,23 +251,55 @@ footer {
   padding: 40px 0 20px 0;
   text-align: center;
 }
+
 .footer-links {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-bottom: 10px;
 }
+
 .footer-links a {
   color: #666;
   font-size: 15px;
   text-decoration: none;
 }
+
 .footer-info {
   color: #666;
   font-size: 13px;
   margin-bottom: 10px;
 }
+
 .footer-copy {
   color: #aaa;
   font-size: 13px;
 }
+    /* <!-- ---자바스크립트--- --> */
+
+  .popup {
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%);
+    top: 200px;
+    letter-spacing: 1.75px;
+  }
+  
+  .button {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20px;
+    top: 130px;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.178);
+    line-height: 1.75;
+  }
