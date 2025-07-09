@@ -2,116 +2,150 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>프로젝트 메인페이지</title>
+  <title>김세정 프로젝트1</title>
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-      <div class="popup">
-        해당 사이트는 학습용으로 제작되었으며 대한민국 구석구석과 무관합니다. <br>
-        구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
-        <button class="button">닫기</button>
-    </div>
-  <div class="container">
-    <header class="header">
-      <div class="logo">LOGO</div>
-      <div class="search-bar">검색어</div>
-      <div class="top10">top10</div>
-      <div class="header-btns">
-        <button>Button</button>
-        <button>Button</button>
-        <button>Button</button>
-        <button>Button</button>
-      </div>
+  <header class="header">
+    <div class="header-bar">
+      <span class="header-logo">대한민국 구석구석 <span class="header-location">북구시</span></span>
+      <nav class="header-nav">
+        <button>테마</button>
+        <button>지역</button>
+        <button>여행코스</button>
+        <button>여행정보</button>
+      </nav>
       <div class="header-icons">
-        <div class="icon">💛</div>
-        <div class="icon">i</div>
-        <div class="icon">i</div>
+        <span>🔍</span>
+        <span>👤</span>
+        <span>🌐</span>
+        <span>KR ▼</span>
       </div>
-    </header>
-    <main>
-      <section class="visual">
-        <button class="arrow left">&lt;</button>
-        <div class="visual-text">Text</div>
-        <button class="arrow right">&gt;</button>
-        <div class="visual-dots">
-          <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="main-visual">
+      <button class="arrow left">&lt;</button>
+      <div class="main-visual-content">
+        <h2>강원도 양양해변</h2>
+        <p>서핑 여행지</p>
+        <div class="main-visual-search">
+          <input type="text" placeholder="어디로 떠나고 싶으신가요? 지역명을 검색해보세요.">
+          <span class="search-icon">🔍</span>
         </div>
-      </section>
-      <section class="content1">
-          <section class="category-row">
-            <div class="category">text</div>
-            <div class="category">text</div>
-            <div class="category">text</div>
-            <div class="category">text</div>
-          </section>
-          <section class="gallery-row">
-            <div class="gallery-img"></div>
-            <div class="gallery-img"></div>
-            <div class="gallery-img"></div>
-          </section>
-          <section class="button-row">
-            <button>Button</button>
-          </section>
-      </section>     <!-- 콘텐츠1 -->
-      <section class="content2">
-          <section class="week-row">
-            <div class="week week1">text(month)</div>
-            <div class="week">text(1week)</div>
-            <div class="week">text(2week)</div>
-            <div class="week">text(3week)</div>
-            <div class="week">text(4week)</div>
-            <div class="week">text(5week)</div>
-          </section>
-          <section class="gallery-row">
-            <div class="gallery-img"></div>
-            <div class="gallery-img"></div>
-            <div class="gallery-img"></div>
-          </section>
-          <section class="button-row">
-            <button>Button</button>
-          </section>
-      </section>   <!-- 콘텐츠2 -->
-      <section class="content3">
-          <section class="category-row">
-            <div class="category">text</div>
-            <div class="category">text</div>
-            <div class="category">text</div>
-            <div class="category">text</div>
-          </section>
-          <section class="gallery-row">
-            <div class="gallery-img"></div>
-            <div class="gallery-img"></div>
-            <div class="gallery-img"></div>
-          </section>
-          <section class="button-row">
-            <button>Button</button>
-          </section>
-      </section>   <!-- 콘첸츠3 -->
-      <section class="footer-banner">
-          <img src="#" alt="광고 이미지">
-      </section>
-    </main>
-    <footer>
-      <div class="footer-links">
-        <a href="#">블로그</a>
-        <a href="#">네이버</a>
-        <a href="#">엑스</a>
-        <a href="#">카카오스토리</a>
-        <a href="#">인스타그램</a>
-        <a href="#">네이버밴드</a>
       </div>
-      <div class="footer-info">
-        <span>관광정보</span>
-        <span>유관기관</span>
-        <span>이동</span>
-        <span>이동</span>
+      <button class="arrow right">&gt;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="recommend">
+      <div class="recommend-title">
+        “AI가 당신에게 딱 맞는 여행지를 추천해드릴게요!”
       </div>
-      <div class="footer-copy">
-        <span>©한국관광공사</span>
+      <div class="recommend-tabs">
+        <button>AI 맞춤형 추천</button>
+        <button>핫플 추천</button>
+        <button>여행 플래너</button>
       </div>
-    </footer>
-  </div>
-    <script src="script/project.js"></script>   
+      <div class="recommend-slider">
+        <button class="arrow left">&lt;</button>
+        <div class="slider-items">
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+        </div>
+        <button class="arrow right">&gt;</button>
+      </div>
+      <button class="more-btn">오늘의 추천 더보기</button>
+      <div class="recommend-side">
+        <button class="side-btn">❤️</button>
+        <button class="side-btn">i</button>
+        <button class="side-btn">⭮</button>
+      </div>
+    </section>
+
+    <section class="theme">
+      <div class="theme-title">힐링 테마 여행</div>
+      <div class="theme-slider">
+        <button class="arrow left">&lt;</button>
+        <div class="slider-items">
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+        </div>
+        <button class="arrow right">&gt;</button>
+      </div>
+      <button class="more-btn">더 궁금하다면 click</button>
+    </section>
+
+    <section class="banner">
+      <div class="banner-content">
+        <span>TEXT</span>
+        <div class="banner-slider">
+          <div class="banner-slide"></div>
+          <div class="banner-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="festival">
+      <div class="festival-title">주간별 축제</div>
+      <div class="festival-calendar">
+        <div class="calendar-header">
+          <span>2025</span>
+          <span>07</span>
+        </div>
+        <div class="calendar-days">
+          <span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span>
+        </div>
+        <div class="calendar-dates">
+          <span class="active">16</span>
+          <span>17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          <span>22</span>
+        </div>
+      </div>
+      <div class="festival-slider">
+        <button class="arrow left">&lt;</button>
+        <div class="slider-items">
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+        </div>
+        <button class="arrow right">&gt;</button>
+      </div>
+      <button class="more-btn">더 많은 일정 보기</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-sns">
+      <span>블로그</span>
+      <span>페이스북</span>
+      <span>X</span>
+      <span>인스타그램</span>
+      <span>카카오스토리</span>
+      <span>네이버밴드</span>
+    </div>
+    <div class="footer-logos">
+      <div class="footer-logo"></div>
+      <div class="footer-logo"></div>
+      <div class="footer-logo"></div>
+      <div class="footer-logo"></div>
+    </div>
+    <div class="footer-info">
+      <span>관광정보 유관기관 이동 이동</span>
+      <span>©한국관광공사</span>
+    </div>
+  </footer>
 </body>
 </html>
