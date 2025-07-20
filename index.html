@@ -1,151 +1,323 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <title>김세정 프로젝트1</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="대한민국 구석구석 리디자인 프로젝트. 국내 여행·축제 정보를 직관적으로 제공하기 위해 UX/UI 디자인을 개선하고, 최신 웹 표준과 반응형 웹 기술로 퍼블리싱한 포트폴리오 사이트입니다.">
+    <meta name="keywords"
+        content="대한민국 구석구석, Korea travel, 한국관광공사, 국내 여행, 여행 정보, 축제 정보, 문화 관광, 웹 리디자인, UX/UI 디자인, 웹 퍼블리싱, 반응형 웹, 웹 접근성, HTML, CSS, JavaScript, 웹 포트폴리오, Visit Korea">
+    <meta name="auther" content="김세정">
+    <meta property="og:title" content="대한민국 구석구석 메인페이지 리디자인 프로젝트"> <!-- -> 콘텐츠 제목 -->
+    <meta property="og:url" content="https://github.com/tpwjd123/project1.git"> <!-- -> 웹페이지 URL -->
+    <meta property="og:type" content="website"> <!-- -> 웹페이지 타입(blog, website 등) -->
+    <meta property="og:image" content="image/logo.png"> <!-- -> 표시되는 이미지 -->
+    <meta property="og:site_name" content="대한민국 리디자인 프로젝트"> <!-- -> 웹사이트 이름(URL과 다름) -->
+    <meta property="og:description"
+        content="대한민국 구석구석 리디자인 프로젝트. 국내 여행·축제 정보를 직관적으로 제공하기 위해 UX/UI 디자인을 개선하고, 최신 웹 표준과 반응형 웹 기술로 퍼블리싱한 포트폴리오 사이트입니다.">
+    <!-- -> 웹페이지 설명(제목 아래에 표시) -->
+    <title>대한민국 구석구석 리디자인(김세정직접코딩)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png"> <!-- 파비콘첨부 -->
+    <style>
+        /* =======변수 ======
+:root {
+--col: 8.8rem;
+--g:1.4rem;
+--gu: calc(var(--g) * 2);
+--row: 2.8rem;
+--unit: calc(var(--col) + var(--gu));
+--layout: calc(var(--unit)) * 12 -var(--gu));
+} */
+    </style>
 </head>
+
 <body>
-  <header class="header">
-    <div class="header-bar">
-      <span class="header-logo">대한민국 구석구석 <span class="header-location">북구시</span></span>
-      <nav class="header-nav">
-        <button>테마</button>
-        <button>지역</button>
-        <button>여행코스</button>
-        <button>여행정보</button>
-      </nav>
-      <div class="header-icons">
-        <span>🔍</span>
-        <span>👤</span>
-        <span>🌐</span>
-        <span>KR ▼</span>
-      </div>
+    <div class="popup">
+        해당 사이트는 학습용으로 제작되었으며<br> 대한민국 구석-구석과 무관합니다. <br>
+        구직용 포트폴리오로 상업적 목적이 없음을 알립니다.<button>확인</button>
     </div>
-    <div class="main-visual">
-      <button class="arrow left">&lt;</button>
-      <div class="main-visual-content">
-        <h2>강원도 양양해변</h2>
-        <p>서핑 여행지</p>
-        <div class="main-visual-search">
-          <input type="text" placeholder="어디로 떠나고 싶으신가요? 지역명을 검색해보세요.">
-          <span class="search-icon">🔍</span>
-        </div>
-      </div>
-      <button class="arrow right">&gt;</button>
+    <div class="wrap">
+        <header>
+            <nav class="gnb">
+                <li class="logo"><a href="index1.html"><img src="images/logo.png" alt="로고이미지"></a></li>
+                <ul class="dep1">
+                    <li><a href="#">테마</a>
+                        <ul class="dep2">
+                        </ul>
+                    </li>
+                    <li><a href="#">지역</a>
+                        <ul class="dep2">
+                        </ul>
+                    </li>
+                    <li><a href="#">여행코스</a>
+                        <ul class="dep2">
+                            <li><a href="#">추천코스</a></li>
+                            <li><a href="#">AI콕콕 플래너</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">여행정보</a>
+                        <ul class="dep2">
+                            <li><a href="#">여행지</a></li>
+                            <li><a href="#">여행기사</a></li>
+                            <li><a href="#">축제</a></li>
+                            <li><a href="#">공연 / 행사</a></li>
+                            <li><a href="#">AI콕콕</a></li>
+                            <li><a href="#">여행상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">여행혜택</a>
+                        <ul class="dep2">
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">가볼래-터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sidenav">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">언어/KR</a></li>
+                </ul>
+                <div class="w100"></div>
+            </nav>
+            <div class="header_slide">
+                <div class="slide_m"></div>
+                <div class="slide_m"></div>
+                <div class="slide_m"></div>
+                <div class="slide_m"></div>
+                <input type="search" placeholder="여름에 해변가는 어때요?">
+            </div>
+        </header>
+        <main>
+            <div class="inner">
+                <section class="section1 bgcolor">
+                    <h2>"AI가 당신에게 딱 맞는 여행지를 추천해드릴게요!"</h2>
+                    <div class="section1_tab">
+                        <button class="button_section1">AI 맞춤형 추천</button>
+                        <button class="button_section1">핫플 추천</button>
+                        <button class="button_section1">여행 플래너</button>
+                    </div>
+                    <p>관광 빅데이터 정보로 분석한 지역별 핫한 여행지와 맛집을 소개합니다.</p>
+                    <div class="container">
+                        <div class="slider"></div>
+                        <div class="slider"></div>
+                        <div class="slider"></div>
+                        <div class="slider"></div>
+                        <div class="slider"></div>
+                    </div>
+                    <button>오늘의 추천 더보기</button>
+                </section>
+                <section class="section2 bgcolor">
+                    <h2>"내가 직접 선택하는 테마별 여행지"</h2>
+                    <div class="section1_tab">
+                        <button class="button_section2">도심</button>
+                        <button class="button_section2">체험</button>
+                        <button class="button_section2">액티비티</button>
+                        <button class="button_section2">역사</button>
+                    </div>
+                    <p>관심있는 테마를 눌러보세요.</p>
+                    <div class="container">
+                        <div class="slider"></div>
+                        <div class="slider"></div>
+                        <div class="slider"></div>
+                        <div class="slider"></div>
+                        <div class="slider"></div>
+                    </div>
+                    <button>또 다른 테마 click</button>
+                </section>
+                <div class="banner">
+                    <img src="" alt="">
+                </div>
+                <section class="section3 bgcolor">
+                    <h2>"이번 주말 축제가자!"</h2>
+                    <div class="section1_tab">
+                        <p>2025년 <br>7월</p>
+                        <button class="button_section2">첫째주</button>
+                        <button class="button_section2">둘째주</button>
+                        <button class="button_section2">셋째주</button>
+                        <button class="button_section2">넷째주</button>
+                        <button class="button_section2">다섯째주</button>
+                    </div>
+                    <p>놓치면 1년이나 기다려야하는 그 축제, 축제따라 여행가요
+                        <br>#머드축제 #유채꽃 #불꽃놀이
+                    </p>
+                    <figure class="container">
+                        <div class="slider">
+                            <img src="#" alt="">
+                            <figcaption>2025.07.25~2025.08.10</figcaption>
+                        </div>
+                        <div class="slider">
+                            <img src="#" alt="">
+                            <figcaption>2025.07.25~2025.08.10</figcaption>
+                        </div>
+                        <div class="slider">
+                            <img src="#" alt="">
+                            <figcaption>2025.07.25~2025.08.10</figcaption>
+
+                        </div>
+                        <div class="slider">
+                            <img src="#" alt="">
+                            <figcaption>2025.07.25~2025.08.10</figcaption>
+
+                        </div>
+                        <div class="slider">
+                            <img src="#" alt="">
+                            <figcaption>2025.07.25~2025.08.10</figcaption>
+
+                        </div>
+                    </figure>
+                    <button>더 알아보기</button>
+
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="select_area">
+                    <div class="alert"><a href="#">[소식][산림청] 계곡 풍덩, 쉼 한모금! 여름철 무더위에는 자연휴양림으로!</a>
+                    <button><</button>
+                <button>=</button>
+            <button>></button></div>
+                    <div class="select1">
+                        <select>
+                            <option value="" selected>관광정보</option>
+                            <option value="">가이드북</option>
+                            <option value="">베니키아</option>
+                            <option value="">고캠핑</option>
+                            <option value="">두루누비</option>
+                            <option value="">관광불편신고센터</option>
+                            <option value="">공공 와이파이</option>
+                            <option value="">템플스테이</option>
+                            <option value="">국가유산 유유자적</option>
+                            <option value="">세이프스테이</option>
+                            <option value="">관광두레</option>
+                            <option value="">포토코리아</option>
+                            <option value="">TourAPI4.0</option>
+                            <option value="">한국관광 데이터랩</option>
+                            <option value="">한국관광산업포털</option>
+                            <option value="">한국관광콘텐츠랩</option>
+                            <option value="">관광기념품</option>
+                        </select>
+                        <button class="select_button">이동</button>
+                    </div>
+                    <div class="select2 ">
+                        <select>
+                            <option value="" selected>유관기관</option>
+                            <option value="">외교부 해외안전여행</option>
+                            <option value="">대한민국의 아름다운영토 독도</option>
+                            <option value="">한국농어촌공사 웰촌</option>
+                            <option value="">남도여행길잡이</option>
+                            <option value="">한국관광공사 MICE 정보시스템</option>
+                            <option value="">국립현대미술관</option>
+                            <option value="">경기관광플랫폼</option>
+                            <option value="">제주관광공사</option>
+                            <option value="">부산관광공사</option>
+                            <option value="">인천관광공사</option>
+                            <option value="">서울관광재단</option>
+                            <option value="">한국철도공사</option>
+                            <option value="">국립중앙박물관</option>
+                            <option value="">문화체육관광부</option>
+                            <option value="">한국산림복지진흥원</option>
+                            <option value="">한국방문의해위원회</option>
+                            <option value="">문화가 있는 날</option>
+                            <option value="">인문 360º</option>
+                            <option value="">한국도로공사</option>
+                        </select>
+                        <button class="select_button"> 이동</button>
+                    </div>
+                </div>
+
+                <!-- SNS 섹션 -->
+                <div class="footer-sns">
+                    <p class="sns-title">"대한민국 구석구석을 SNS에서 만나 보세요!"</p>
+                    <div class="sns-links">
+                        <a href="#" class="sns-link blog">
+                            <img src="images/footer_naverblog.png" alt="블로그">
+                            <span>블로그</span>
+                        </a>
+                        <a href="#" class="sns-link facebook">
+                            <img src="images/footer_facebook.png" alt="페이스북">
+                            <span>페이스북</span>
+                        </a>
+                        <a href="#" class="sns-link twitter">
+                            <img src="images/footer_X.png" alt="엑스">
+                            <span>엑스</span>
+                        </a>
+                        <a href="#" class="sns-link instagram">
+                            <img src="images/footer_Instagram.png" alt="인스타그램">
+                            <span>인스타그램</span>
+                        </a>
+                        <a href="#" class="sns-link kakao">
+                            <img src="images/footer_kakaostory.png" alt="카카오스토리">
+                            <span>카카오스토리</span>
+                        </a>
+                        <a href="#" class="sns-link naver">
+                            <img src="images/footer_naverband.png" alt="네이버밴드">
+                            <span>네이버밴드</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 관련기관 배너 -->
+                <div class="footer-banners">
+                    <div class="banner-item">
+                        <img src="images/footer_odii.png" alt="관련기관1">
+                    </div>
+                    <div class="banner-item">
+                        <img src="images/footer_odii2.gif" alt="관련기관2">
+                    </div>
+                    <div class="banner-item">
+                        <img src="images/footer_wallpaper.gif" alt="관련기관3">
+                    </div>
+                    <div class="banner-item">
+                        <img src="images/footer_guidebook.gif" alt="관련기관4">
+                    </div>
+                    <div class="banner-item">
+                        <img src="images/footer_1330.gif" alt="관련기관5">
+                    </div>
+                </div>
+
+                <!-- 기관 정보 -->
+                <div class="footer-info">
+                    <div class="info-links">
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">위치기반서비스 이용약관</a>
+                        <a href="#">개인위치정보 처리방침</a>
+                        <a href="#">저작권정책</a>
+                        <a href="#">고객서비스현장</a>
+                        <a href="#">전자우편무단수집거부</a>
+                        <a href="#">자주 묻는 질문</a>
+                        <a href="#">찾아오시는 길</a>
+                        <a href="#">사이트맵</a>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="info">
+                            <span> 우)010101</span>
+                            <span>강원특별자치도 춘천시 손기정로 15길 25</span>
+                            <span>TEL : 070-0 505-0505</span>
+                            <span>사업자등록번호 : 100-01-05050</span>
+                            <span>통신판매업신고 : 제2022-강원마포-0001호</span>
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+                        <img class="footer_logo" src="images/footer_logo.png" alt="한국관광공사로고">
+                        <div class="related-sites">
+                            <img src="images/footer_tourapi.png" alt="TourAPI 4.0">
+                            <img src="images/footer_wa.png" alt="안전여행">
+                            <img src="images/footer_korea.png" alt="한국관광공사">
+                            <img src="images/footer_travel.png" alt="문화체육관광부">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-  </header>
-
-  <main>
-    <section class="recommend">
-      <div class="recommend-title">
-        “AI가 당신에게 딱 맞는 여행지를 추천해드릴게요!”
-      </div>
-      <div class="recommend-tabs">
-        <button>AI 맞춤형 추천</button>
-        <button>핫플 추천</button>
-        <button>여행 플래너</button>
-      </div>
-      <div class="recommend-slider">
-        <button class="arrow left">&lt;</button>
-        <div class="slider-items">
-          <div class="slider-item"></div>
-          <div class="slider-item"></div>
-          <div class="slider-item"></div>
-          <div class="slider-item"></div>
-        </div>
-        <button class="arrow right">&gt;</button>
-      </div>
-      <button class="more-btn">오늘의 추천 더보기</button>
-      <div class="recommend-side">
-        <button class="side-btn">❤️</button>
-        <button class="side-btn">i</button>
-        <button class="side-btn">⭮</button>
-      </div>
-    </section>
-
-    <section class="theme">
-      <div class="theme-title">힐링 테마 여행</div>
-      <div class="theme-slider">
-        <button class="arrow left">&lt;</button>
-        <div class="slider-items">
-          <div class="slider-item"></div>
-          <div class="slider-item"></div>
-          <div class="slider-item"></div>
-        </div>
-        <button class="arrow right">&gt;</button>
-      </div>
-      <button class="more-btn">더 궁금하다면 click</button>
-    </section>
-
-    <section class="banner">
-      <div class="banner-content">
-        <span>TEXT</span>
-        <div class="banner-slider">
-          <div class="banner-slide"></div>
-          <div class="banner-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="festival">
-      <div class="festival-title">주간별 축제</div>
-      <div class="festival-calendar">
-        <div class="calendar-header">
-          <span>2025</span>
-          <span>07</span>
-        </div>
-        <div class="calendar-days">
-          <span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span>
-        </div>
-        <div class="calendar-dates">
-          <span class="active">16</span>
-          <span>17</span>
-          <span>18</span>
-          <span>19</span>
-          <span>20</span>
-          <span>21</span>
-          <span>22</span>
-        </div>
-      </div>
-      <div class="festival-slider">
-        <button class="arrow left">&lt;</button>
-        <div class="slider-items">
-          <div class="slider-item"></div>
-          <div class="slider-item"></div>
-          <div class="slider-item"></div>
-        </div>
-        <button class="arrow right">&gt;</button>
-      </div>
-      <button class="more-btn">더 많은 일정 보기</button>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-sns">
-      <span>블로그</span>
-      <span>페이스북</span>
-      <span>X</span>
-      <span>인스타그램</span>
-      <span>카카오스토리</span>
-      <span>네이버밴드</span>
-    </div>
-    <div class="footer-logos">
-      <div class="footer-logo"></div>
-      <div class="footer-logo"></div>
-      <div class="footer-logo"></div>
-      <div class="footer-logo"></div>
-    </div>
-    <div class="footer-info">
-      <span>관광정보 유관기관 이동 이동</span>
-      <span>©한국관광공사</span>
-    </div>
-  </footer>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
