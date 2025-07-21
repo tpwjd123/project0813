@@ -18,7 +18,7 @@
         content="대한민국 구석구석 리디자인 프로젝트. 국내 여행·축제 정보를 직관적으로 제공하기 위해 UX/UI 디자인을 개선하고, 최신 웹 표준과 반응형 웹 기술로 퍼블리싱한 포트폴리오 사이트입니다.">
     <!-- -> 웹페이지 설명(제목 아래에 표시) -->
     <title>대한민국 구석구석 리디자인(김세정직접코딩)</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png"> <!-- 파비콘첨부 -->
     <style>
@@ -83,16 +83,16 @@
                 <div class="w100"></div>
             </nav>
             <div class="header_slide">
-                <div class="slide_m"></div>
-                <div class="slide_m"></div>
-                <div class="slide_m"></div>
-                <div class="slide_m"></div>
+                <div class="slide_m"><a href="#"></a><img src="" alt=""></div>
+                <div class="slide_m"><a href="#"></a><img src="" alt=""></div>
+                <div class="slide_m"><a href="#"></a><img src="" alt=""></div>
+                <div class="slide_m"><a href="#"></a><img src="" alt=""></div>
                 <input type="search" placeholder="여름에 해변가는 어때요?">
             </div>
         </header>
         <main>
-            <div class="inner">
-                <section class="section1 bgcolor">
+            <section class="section1 bgcolor">
+                <div class="inner">
                     <h2>"AI가 당신에게 딱 맞는 여행지를 추천해드릴게요!"</h2>
                     <div class="section1_tab">
                         <button class="button_section1">AI 맞춤형 추천</button>
@@ -101,15 +101,17 @@
                     </div>
                     <p>관광 빅데이터 정보로 분석한 지역별 핫한 여행지와 맛집을 소개합니다.</p>
                     <div class="container">
-                        <div class="slider"></div>
-                        <div class="slider"></div>
-                        <div class="slider"></div>
-                        <div class="slider"></div>
-                        <div class="slider"></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
                     </div>
                     <button>오늘의 추천 더보기</button>
-                </section>
-                <section class="section2 bgcolor">
+                </div>
+            </section>
+            <section class="section2 bgcolor">
+                <div class="inner">
                     <h2>"내가 직접 선택하는 테마별 여행지"</h2>
                     <div class="section1_tab">
                         <button class="button_section2">도심</button>
@@ -119,24 +121,26 @@
                     </div>
                     <p>관심있는 테마를 눌러보세요.</p>
                     <div class="container">
-                        <div class="slider"></div>
-                        <div class="slider"></div>
-                        <div class="slider"></div>
-                        <div class="slider"></div>
-                        <div class="slider"></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
                     </div>
                     <button>또 다른 테마 click</button>
-                </section>
-                    <div class="banner">
-                        <a href="#">
-                            <span>
-                                한여름밤, 즐기는 대한민국 K-Night Light!
-                            </span>
-                            <strong>대한민국 밤밤페스타 2025. 6. 28. ~ 8. 30.</strong>
-                            <img src="images/banner8.png" alt="대한민국밤밤페스타">
-                        </a>
-                    </div>
-                <section class="section3 bgcolor">
+                </div>
+            </section>
+            <div class="banner">
+                <a href="#">
+                    <span>
+                        한여름밤, 즐기는 대한민국 K-Night Light!
+                    </span>
+                    <strong>대한민국 밤밤페스타 2025. 6. 28. ~ 8. 30</strong>
+                    <img src="images/banner8.png" alt="대한민국밤밤페스타">
+                </a>
+            </div>
+            <section class="section3 bgcolor">
+                <div class="inner">
                     <h2>"이번 주말 축제가자!"</h2>
                     <div class="section1_tab">
                         <p>2025년 <br>7월</p>
@@ -161,23 +165,19 @@
                         <div class="slider">
                             <img src="#" alt="">
                             <figcaption>2025.07.25~2025.08.10</figcaption>
-
                         </div>
                         <div class="slider">
                             <img src="#" alt="">
                             <figcaption>2025.07.25~2025.08.10</figcaption>
-
                         </div>
                         <div class="slider">
                             <img src="#" alt="">
                             <figcaption>2025.07.25~2025.08.10</figcaption>
-
                         </div>
                     </figure>
                     <button>더 알아보기</button>
-
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="footer-container">
@@ -324,6 +324,9 @@
                 </div>
             </div>
         </footer>
+        <div class="topbtn">
+            <a href="#" id="top"><img src="images/topbtn.png" alt=""></a>
+        </div>
     </div>
     <script src="js/index.js"></script>
 </body>

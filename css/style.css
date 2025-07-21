@@ -263,9 +263,12 @@ section {
 }
 
 .bgcolor {
-    width: 100%;
+    width: 100vw;
     height: auto;
     background-color: rgba(163, 234, 255, 0.192);
+    margin-left: calc(-50vw + 50%);
+    padding: 60px 0;
+    position: relative;
 }
 
 section h2,
@@ -310,7 +313,7 @@ p {
     margin: 10px 30px;
 }
 
-section>button {
+.inner>button {
     width: 200px;
     height: 50px;
     border: #ccc solid 3px;
@@ -334,31 +337,39 @@ section>button {
     width: 100vw;
     height: auto;
     position: relative;
-    transform: translate(-50);
-    display: flex;
     background-color: rgb(33, 6, 128);
 }
 
-.banner>a {
-    color: white;
+.banner a {
+    display: flex;
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+   align-content: center;
+    box-sizing: border-box;
+
 }
 
 .banner>a>span {
     font-size: 16px;
     text-decoration: none;
     text-align: center;
+    color: white;
 }
 
 .banner>a>strong {
     font-size: 20px;
     text-decoration: none;
-        text-align: center;
-
+    text-align: center;
+    color: white;
 
 }
 
-.banner>img {
-    left: 70px;
+.banner>a>img {
+    position: relative;
+    left: 150px;
 }
 
 
@@ -612,6 +623,15 @@ button {
 .related-sites img {
     height: auto;
     width: auto;
+}
+
+.topbtn img {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 80%;
+    left: 85%;
+    z-index: 999;
 }
 
 /* 반응형 디자인 */
