@@ -35,7 +35,7 @@ body {
 
 .popup {
     & {
-        width: 430px;
+        width: 440px;
         height: 150px;
         border: 3px solid rgb(112, 110, 110);
         position: fixed;
@@ -45,26 +45,28 @@ body {
         background-color: white;
         font-size: 20px;
         line-height: 1.5;
-        padding: 50px 16px 0;
+        padding: 40px 30px 0;
         z-index: 555;
         border-radius: 20px;
+
     }
 
     button {
         width: 60px;
         height: 40px;
-        border-radius: 20px;
+        border-radius: 10px;
         position: relative;
         left: 85%;
-        border: solid 2px rgb(112, 110, 110);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        top: 5px;
     }
 }
 
 
 header {
     width: 100%;
-    height: 900px;
+    height: 100vh;
+    margin-bottom: 100px;
 }
 
 
@@ -198,14 +200,6 @@ header {
     height: 100%;
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .swiper-slide img {
     display: block;
@@ -228,7 +222,7 @@ header {
     height: 70px;
     border: #1f1e385d solid 4px;
     box-sizing: border-box;
-    background-color:rgba(227, 239, 248, 0.514);
+    background-color: rgba(227, 239, 248, 0.514);
     border-radius: 10px;
     font-size: 20px;
     color: #f7f7f7;
@@ -243,7 +237,7 @@ header {
     width: 60px;
     height: 70px;
     border: #1f1e385d solid 4px;
-    background-color:rgba(3, 35, 59, 0.514);
+    background-color: rgba(3, 35, 59, 0.514);
     color: white;
     border-radius: 10px;
 }
@@ -261,7 +255,7 @@ section {
     width: 100%;
     height: auto;
     position: relative;
-    margin: 200px 0;
+    margin: 100px 0;
 }
 
 .bgcolor {
@@ -279,6 +273,7 @@ p {
     text-align: center;
 }
 
+
 .container {
     display: flex;
     margin: 0 auto;
@@ -292,6 +287,66 @@ p {
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     margin: 20px 10px;
+}
+
+/* section1 */
+.section1 p {
+    padding: 0 0 50px 0;
+
+}
+
+/* section1_swiper */
+.promotion {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.section1_sw .swiper-slide {
+    width: 222px !important;
+    /* 각 슬라이드 강제 크기 설정 */
+}
+
+.section1_sw .swiper-slide>a img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.section3_sw .swiper-slide {
+    width: 222px !important;
+}
+
+.section3_sw .swiper-slide>a img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.swiper-prev,
+.swiper-next {
+    z-index: 999;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.material-symbols-outlined {
+    font-size: 200px;
+    color: #070404;
+    cursor: pointer;
+}
+
+.swiper-prev {
+    left: 0;
+}
+
+.swiper-next {
+    right: 0;
 }
 
 .section1_tab {
@@ -325,17 +380,11 @@ p {
 }
 
 
-.button_section2 {
-    width: 100px;
-    height: 60px;
-    font-size: 16px;
-    border-radius: 20px;
-    border: 1px solid lightgray;
-    background-color: #ffffff;
-}
 
 
-.banner1 {
+/* banner 배너영역 */
+
+.banner {
     width: 100vw;
     height: 160px;
     position: relative;
@@ -345,7 +394,7 @@ p {
     box-sizing: border-box;
 }
 
-.banner1 a {
+.swiper-slide>a {
     width: 1200px;
     display: flex;
     color: white;
@@ -353,7 +402,7 @@ p {
     margin: 0 auto;
 }
 
-.banner1 .text-content {
+.swiper-slide>a .text-content {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -363,14 +412,14 @@ p {
     left: 120px;
 }
 
-.banner1 .text-content span {
+.swiper-slide>a .text-content span {
     font-size: 18px;
     color: white;
     font-weight: 300;
     line-height: 1.2;
 }
 
-.banner1 .text-content strong {
+.swiper-slide>a .text-content strong {
     font-size: 24px;
     color: white;
     font-weight: bold;
@@ -378,7 +427,7 @@ p {
 
 }
 
-.banner1>a>img {
+.swiper-slide>a>img {
     height: auto;
     width: auto;
     object-fit: contain;
@@ -390,6 +439,14 @@ p {
     line-height: normal;
 }
 
+.button_section2 {
+    width: 100px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    background-color: #ffffff;
+}
 
 
 /* ======== Footer 스타일 ======== */
