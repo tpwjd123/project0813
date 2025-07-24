@@ -38,8 +38,7 @@ body {
         width: 430px;
         height: 150px;
         border: 3px solid rgb(112, 110, 110);
-        /* text-align: center; */
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -47,10 +46,8 @@ body {
         font-size: 20px;
         line-height: 1.5;
         padding: 50px 16px 0;
-        padding-bottom: 0;
         z-index: 555;
         border-radius: 20px;
-        position: fixed;
     }
 
     button {
@@ -194,57 +191,62 @@ header {
     opacity: 0;
     background-size: cover;
     background-position: center;
-    animation: slide_m 30s infinite linear;
 }
 
-.slide_m:nth-child(1) {
-    background-image: url('../images/mainimage1.jpg');
-    animation-delay: 0s;
+.swiper {
+    width: 100%;
+    height: 100%;
 }
 
-.slide_m:nth-child(2) {
-    background-image: url('../images/mainimage2.jpg');
-    animation-delay: -7.5s;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slide_m:nth-child(3) {
-    background-image: url('../images/mainimage3.jpg');
-    animation-delay: -15s;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.slide_m:nth-child(4) {
-    background-image: url('../images/mainimage4.jpg');
-    animation-delay: -22.5s;
+
+
+.search_box {
+    position: relative;
+    top: -15%;
+    left: 60%;
+    z-index: 5;
 }
 
-@keyframes slide_m {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    20% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    25% {
-        opacity: 0;
-        transform: translateX(-100%);
-        animation-timing-function: step-end;
-    }
-
-    95% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.search_txt {
+    width: 600px;
+    height: 70px;
+    border: #1f1e385d solid 4px;
+    box-sizing: border-box;
+    background-color:rgba(227, 239, 248, 0.514);
+    border-radius: 10px;
+    font-size: 20px;
+    color: #f7f7f7;
+    padding: 0 30px;
 }
 
+.search_txt::placeholder {
+    color: #f7f7f7;
+}
+
+.searchBtn {
+    width: 60px;
+    height: 70px;
+    border: #1f1e385d solid 4px;
+    background-color:rgba(3, 35, 59, 0.514);
+    color: white;
+    border-radius: 10px;
+}
 
 
 /* --main-- */
@@ -275,7 +277,6 @@ section h2,
 p {
     font-size: 20px;
     text-align: center;
-
 }
 
 .container {
@@ -333,47 +334,56 @@ p {
     background-color: #ffffff;
 }
 
-.banner {
+
+.banner1 {
     width: 100vw;
-    height: auto;
+    height: 160px;
     position: relative;
-    background-color: rgb(33, 6, 128);
-}
-
-.banner a {
+    background: rgb(33, 6, 128);
     display: flex;
-    width: 1200px;
-    height: inherit;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    position: relative;
-   align-content: center;
+    padding: 0 50px;
     box-sizing: border-box;
-
 }
 
-.banner>a>span {
-    font-size: 16px;
-    text-decoration: none;
-    text-align: center;
+.banner1 a {
+    width: 1200px;
+    display: flex;
     color: white;
-}
-
-.banner>a>strong {
-    font-size: 20px;
     text-decoration: none;
-    text-align: center;
-    color: white;
-
+    margin: 0 auto;
 }
 
-.banner>a>img {
+.banner1 .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
     position: relative;
-    left: 150px;
+    top: 50px;
+    left: 120px;
 }
 
+.banner1 .text-content span {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    line-height: 1.2;
+}
 
+.banner1 .text-content strong {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
 
+}
+
+.banner1>a>img {
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    margin-left: 20px;
+}
 
 .section3 .section1_tab p {
     font-weight: 600;
@@ -450,17 +460,13 @@ footer {
     transition: background-color 0.3s;
     text-align: center;
     cursor: pointer;
-
 }
 
-button {
-    cursor: pointer;
-
-}
-
+button,
 .banner-item {
     cursor: pointer;
 }
+
 
 /* SNS 섹션 */
 .footer-sns {
@@ -603,11 +609,6 @@ button {
     flex-wrap: wrap;
     gap: 20px;
 }
-
-/* .copyright>img {
-    width: auto;
-    height: auto;
-} */
 
 .footer_logo {
     width: 89px;

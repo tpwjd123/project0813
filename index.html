@@ -18,20 +18,12 @@
         content="대한민국 구석구석 리디자인 프로젝트. 국내 여행·축제 정보를 직관적으로 제공하기 위해 UX/UI 디자인을 개선하고, 최신 웹 표준과 반응형 웹 기술로 퍼블리싱한 포트폴리오 사이트입니다.">
     <!-- -> 웹페이지 설명(제목 아래에 표시) -->
     <title>대한민국 구석구석 리디자인(김세정직접코딩)</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- swiperBtn -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="icon" type="image/png" href="images/favicon.png"> <!-- 파비콘첨부 -->
-    <style>
-        /* =======변수 ======
-:root {
---col: 8.8rem;
---g:1.4rem;
---gu: calc(var(--g) * 2);
---row: 2.8rem;
---unit: calc(var(--col) + var(--gu));
---layout: calc(var(--unit)) * 12 -var(--gu));
-} */
-    </style>
 </head>
 
 <body>
@@ -83,11 +75,32 @@
                 <div class="w100"></div>
             </nav>
             <div class="header_slide">
-                <div class="slide_m"><a href="#"></a><img src="" alt=""></div>
-                <div class="slide_m"><a href="#"></a><img src="" alt=""></div>
-                <div class="slide_m"><a href="#"></a><img src="" alt=""></div>
-                <div class="slide_m"><a href="#"></a><img src="" alt=""></div>
-                <input type="search" placeholder="여름에 해변가는 어때요?">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/mainimage1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/mainimage2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/mainimage3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/mainimage4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/mainimage1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/mainimage2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/mainimage3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/mainimage4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/mainimage1.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next">
+                        </span>
+                    </div>
+                    <div class="swiper-button-prev">
+                        </span>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="search_box">
+                    <form action="." method="post">
+                        <input class="search_txt" type="text" placeholder="가보고 싶은 곳을 검색해보세요">
+                        <button class="searchBtn">검색</button>
+                    </form>
+                </div>
             </div>
         </header>
         <main>
@@ -130,12 +143,12 @@
                     <button>또 다른 테마 click</button>
                 </div>
             </section>
-            <div class="banner">
+            <div class="banner1">
                 <a href="#">
-                    <span>
-                        한여름밤, 즐기는 대한민국 K-Night Light!
-                    </span>
-                    <strong>대한민국 밤밤페스타 2025. 6. 28. ~ 8. 30</strong>
+                    <div class="text-content">
+                        <span>한여름밤, 즐기는 대한민국 K-Night Light!</span>
+                        <strong>대한민국 밤밤페스타 2025. 6. 28. ~ 8. 30.</strong>
+                    </div>
                     <img src="images/banner8.png" alt="대한민국밤밤페스타">
                 </a>
             </div>
@@ -328,6 +341,7 @@
             <a href="#" id="top"><img src="images/topbtn.png" alt=""></a>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 
