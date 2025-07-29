@@ -8,6 +8,7 @@
 }
 
 
+
 /* ======레이아웃 =======*/
 
 * {
@@ -17,10 +18,11 @@
 
 }
 
-body {
+html {
     overflow-x: hidden;
     overflow-y: scroll;
-
+    scrollbar-width: 20px;
+    scrollbar-color: rgb(255, 255, 255) black;
 }
 
 .wrap {
@@ -75,9 +77,8 @@ header {
     display: flex;
     width: 100%;
     height: 70px;
-    margin: 0 auto;
     justify-content: space-evenly;
-    background-color: rgb(250, 250, 240);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.466) 0%, rgba(53, 54, 54, 0.377) 100%);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     position: relative;
     /* z-index가 작동하도록 추가 */
@@ -86,57 +87,71 @@ header {
     a {
         white-space: nowrap;
         text-decoration: none;
-        color: #000000;
     }
 }
 
 .gnb li {
     list-style: none;
-    line-height: 60px;
 }
 
 /* gnb sticky 추가 */
 .gnb.sticky {
     position: fixed;
+    width: 100%;
     height: 70px;
-    background-color: rgba(255, 255, 255, .1);
-    border: 1px solid rgba(32, 20, 20, 0.2);
-    backdrop-filter: blur(20px);
-
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .dep1 {
     display: flex;
     margin: 0 auto;
     gap: 50px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .dep1>li>a {
     display: block;
     padding: 0 1.36em;
-    color: rgb(19, 19, 19);
+    color: #0e0d0d;
+
 }
 
-.dep1>li:hover {
-    background-color: hsla(175, 75%, 84%, 0.534);
-    transition: all .5s;
-    border-radius: 10px;
-    margin: 0 0 5px 0;
+.dep1>li>a:hover {
+    border-bottom: solid 5px hsl(187, 85%, 73%);
+}
+
+
+.dep1 li {
+    position: relative;
+    line-height: 60px;
+    text-align: center;
 }
 
 .dep2 {
     width: 100%;
     height: 0;
     overflow: hidden;
-    position: relative;
+    position: absolute;
     z-index: 20;
     /* w100보다 높게 설정 */
 }
 
+.dep2 li {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: #0e0d0d;
+    }
+}
+
 .dep2>li>a:hover {
-    color: #034e70;
-    text-decoration-line: underline;
+    color: #0453ff;
+    border-bottom: hsl(244, 97%, 49%) 3px solid;
 }
 
 
@@ -147,9 +162,12 @@ header {
     position: absolute;
     top: 70px;
     transition: height 0.5s;
-    background-color: #d2e3e691;
+    background-color: #F6F7FC;
     z-index: 15;
     /* 헤더보다 높게 설정 */
+    border-radius: 8px;
+    box-shadow: 5px 5px 3px rgb(145 152 164/15%);
+
 }
 
 .dep1:hover~.w100,
@@ -165,29 +183,38 @@ header {
 
 .sidenav {
     display: flex;
+    width: 10%;
     gap: 30px;
-    height: 70px;
-    margin-right: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
 }
 
 .map {
-    width: 31px;
-    height: 31px;
+    width: 30px;
+    height: 30px;
     background: url(../images/icon_header_map.png) no-repeat;
     display: inline-block;
 
 }
 
 .profile {
-    width: 31px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     background: url(../images/icon_header_profile1.png) no-repeat;
     display: inline-block;
 
 }
 
+.profile:hover,
+.lang_select:hover,
+.map:hover {
+    background-color: hsl(187, 85%, 73%);
+    border-radius: 50%;
+}
+
 .lang_select {
-    width: 29px;
+    width: 30px;
     height: 30px;
     background: url(../images/icon_header_lang.png) no-repeat;
     display: inline-block;
@@ -195,20 +222,24 @@ header {
 }
 
 .logo {
-    & {
-        width: 10%;
-        margin: 10px 20px;
-    }
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
 
-    img {
-        width: inherit;
-        height: inherit;
-    }
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*  //네비게이션 메뉴바 */
 
 /* header_slide */
+/* 지우기 */
 .header_slide {
     width: 100vw;
     height: 100vh;
@@ -230,6 +261,35 @@ header {
     background-position: center;
 }
 
+/* 지우기 */
+
+.mainText {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 66;
+    color: white;
+    line-height: 0.7;
+    text-align: center;
+    text-shadow: #333;
+
+}
+
+.mainText h1 {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 124px;
+}
+
+.mainText span {
+    font-family: 'KoPubWorldDotum';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+}
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -244,37 +304,46 @@ header {
 }
 
 
-
 .search_box {
-    position: relative;
-    top: -15%;
-    left: 60%;
+    position: absolute;
+    /* 부모 기준 */
+    width: 400px;
+    height: 65px;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%);
     z-index: 5;
 }
 
-.search_txt {
-    width: 600px;
-    height: 70px;
-    border: #1f1e385d solid 4px;
+#search_txt {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffffcb;
+    background-color: rgba(255, 255, 255, 0.16);
     box-sizing: border-box;
-    background-color: rgba(227, 239, 248, 0.514);
-    border-radius: 10px;
-    font-size: 20px;
-    color: #f7f7f7;
-    padding: 0 30px;
+    padding-left: 84px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
 }
 
-.search_txt::placeholder {
-    color: #f7f7f7;
+#search_txt::placeholder {
+    color: #ffffff;
+    font-size: 18px;
+
 }
 
 .searchBtn {
-    width: 60px;
-    height: 70px;
-    border: #1f1e385d solid 4px;
-    background-color: rgba(3, 35, 59, 0.514);
-    color: white;
-    border-radius: 10px;
+    position: absolute;
+    left: 84%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 65px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

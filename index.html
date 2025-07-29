@@ -20,6 +20,7 @@
     <title>대한민국 구석구석 리디자인(김세정직접코딩)</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <!-- swiperBtn -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style1.css">
@@ -34,7 +35,7 @@
     <div class="wrap">
         <header>
             <nav class="gnb">
-                <li class="logo"><a href="index.html"><img src="images/logo.png" alt="로고이미지"></a></li>
+                <li class="logo"><a href="index.html"><img src="images/logo.png" alt="로고이미지"></a></li> <!-- h1으로 바꾸고 li 빼야함 -->
                 <ul class="dep1">
                     <li><a href="#">테마</a>
                         <ul class="dep2">
@@ -74,7 +75,7 @@
                 </ul>
                 <div class="w100"></div>
             </nav>
-            <div class="header_slide">
+            <div class="header_slide">   <!-- 이미지 메인으로 빼야함 -->
                 <div class="swiper main_Swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="images/mainimage1.jpg" alt=""></div>
@@ -91,384 +92,387 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
-                <div class="search_box">
-                    <form action="." method="post">
-                        <input class="search_txt" type="text" placeholder="가보고 싶은 곳을 검색해보세요">
-                        <button class="searchBtn">검색</button>
-                    </form>
-                </div>
+                <form action="#" method="get"">
+                <div class=" search_box">
+                    <input id="search_txt" type="text" placeholder="가고 싶은 곳을 검색해보세요." title="검색" autocomplete="off">
+                    <a class="searchBtn"><img src="images/btn_header_search.png" alt="검색"></a>
+                </form>
             </div>
-        </header>
-        <main>
-            <section class="section1 bgcolor">
-                <div class="inner">
-                    <h2>"AI가 당신에게 딱 맞는 여행지를 추천해드릴게요!"</h2>
-                    <div class="section1_tab">
-                        <button class="button_section1">AI 맞춤형 추천</button>
-                        <button class="button_section1">핫플 추천</button>
-                        <button class="button_section1">여행 플래너</button>
-                    </div>
-                    <p>관광 빅데이터 정보로 분석한 지역별 핫한 여행지와 맛집을 소개합니다.</p>
-                    <div class="promotion">
-                        <div class="swiper swiper-container section1_sw">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                   <a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
+            <div class="mainText"><h1>TRAVEL IN KOREA<br><span>[한국의 곳곳을 여행하다]</span></h1></div>
+    </div>
+    </div>
+    </header>
+    <main>
+        <section class="section1 bgcolor">
+            <div class="inner">
+                <h2>"AI가 당신에게 딱 맞는 여행지를 추천해드릴게요!"</h2>
+                <div class="section1_tab">
+                    <button class="button_section1">AI 맞춤형 추천</button>
+                    <button class="button_section1">핫플 추천</button>
+                    <button class="button_section1">여행 플래너</button>
+                </div>
+                <p>관광 빅데이터 정보로 분석한 지역별 핫한 여행지와 맛집을 소개합니다.</p>
+                <div class="promotion">
+                    <div class="swiper swiper-container section1_sw">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"><img src="images/section1_1.jpg" alt=""></a>
                             </div>
-                            <div class="swiper-prev"><span class="material-symbols-outlined">
-                                    arrow_back_ios
-                                </span></div>
-                            <div class="swiper-next"><span class="material-symbols-outlined">
-                                    arrow_forward_ios
-                                </span></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
                         </div>
-                    </div> <!-- //.promotion -->
-                    <button>오늘의 추천 더보기</button>
-                </div>
-            </section>
-            <section class="section2 bgcolor">
-                <div class="inner">
-                    <h2>"내가 직접 선택하는 테마별 여행지"</h2>
-                    <div class="section1_tab">
-                        <button class="button_section2">도심</button>
-                        <button class="button_section2">체험</button>
-                        <button class="button_section2">액티비티</button>
-                        <button class="button_section2">역사</button>
+                        <div class="swiper-prev"><span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span></div>
+                        <div class="swiper-next"><span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span></div>
                     </div>
-                    <p>관심있는 테마를 눌러보세요.</p>
-                    <div class="container">
-                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
-                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
-                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
-                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
-                        <div class="slider"><a href="#"></a><img src="" alt=""></div>
-                    </div>
-                    <button>또 다른 테마 click</button>
-                </div>
-            </section>
-            <div class="banner">
-                <div class="swiper banner_swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide bg1">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>한국관광공사X카카오모빌리티</span>
-                                    <strong>여름해변 가볼만할지도💙</strong>
-                                </div>
-                                <img src="images/banner3.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg2">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>K드라마 체험 전시(청와대 사랑채, 7.5~11.30)</span>
-                                    <strong>K드라마, Love Chapter</strong>
-                                </div>
-                                <img src="images/banner4.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg3">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>한여름밤, 즐기는 대한민국 K-Night Light!</span>
-                                    <strong>대한민국 밤밤페스타 2025. 6. 28. ~ 8. 30</strong>
-                                </div>
-                                <img src="images/banner8.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg4">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>총 상금 2,000만원/문화체육관광부장관상 시상</span>
-                                    <strong>2025 한국관광 데이터랩 활용 경진대회</strong>
-                                </div>
-                                <img src="images/banner9.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg5 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>자전거로 돌아보는 부울경!</span>
-                                    <strong>누구나 즐길 수 있는 라이딩 챌린저 모집</strong>
-                                </div>
-                                <img src="images/banner5-1.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg6 right">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>철로 위에 쌓이는 여행의 추억</span>
-                                    <strong>온 가족이 함께 즐기는 기차 여행지</strong>
-                                </div>
-                                <img src="images/banner5-2.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg7 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>댕댕이도 함께 가요!</span>
-                                    <strong>댕댕 여행지도</strong>
-                                </div>
-                                <img src="images/banner6-1.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg8 right">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>데이터로 본 핫플레이스</span>
-                                    <strong>뜨는 도시 7</strong>
-                                </div>
-                                <img src="images/banner6-2.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg9 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>어디로 떠날지 고민될 때,</span>
-                                    <strong>추천!<br>가볼만한 곳.zip</strong>
-                                </div>
-                                <img src="images/banner1-1.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg10 right">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>한국의 맛, 지역에서 찾다!</span>
-                                    <strong>K-로컬 미식여행 33선</strong>
-                                </div>
-                                <img src="images/banner1-2.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg11 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>여행 갈 때 뭐 입지?</span>
-                                    <strong>게임으로 정하는 패션! <br>꾸.온.꾸</strong>
-                                </div>
-                                <img src="images/banner7-1.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg12">
-                            <a href="#">
-                                <div class="text-content right">
-                                    <span>명예 주민 대상, 할인 혜택 가득!</span>
-                                    <strong>디지털 관광 주민증 <br>발급 받고, 혜택받자!</strong>
-                                </div>
-                                <img src="images/banner7-2.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg13 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>로컬의 매력에 풍덩!</span>
-                                    <strong>지역 추천 관광지 <br>137선</strong>
-                                </div>
-                                <img src="images/banner2-1.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                        <div class="swiper-slide bg14 right">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>한국인이 꼭 가봐야 할</span>
-                                    <strong>2025-2026 <br>한국관광 100선</strong>
-                                </div>
-                                <img src="images/banner2-2.png" alt="대한민국밤밤페스타">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
+                </div> <!-- //.promotion -->
+                <button>오늘의 추천 더보기</button>
             </div>
-            <section class="section3 bgcolor">
-                <div class="inner">
-                    <h2>"이번 주말 축제가자!"</h2>
-                    <div class="section1_tab">
-                        <p>2025년 <br>7월</p>
-                        <button class="button_section2">첫째주</button>
-                        <button class="button_section2">둘째주</button>
-                        <button class="button_section2">셋째주</button>
-                        <button class="button_section2">넷째주</button>
-                        <button class="button_section2">다섯째주</button>
-                    </div>
-                    <p>놓치면 1년이나 기다려야하는 그 축제, 축제따라 여행가요
-                        <br>#머드축제 #유채꽃 #불꽃놀이
-                    </p>
-                    <div class="promotion">
-                        <div class="swiper swiper-container section3_sw">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
+        </section>
+        <section class="section2 bgcolor">
+            <div class="inner">
+                <h2>"내가 직접 선택하는 테마별 여행지"</h2>
+                <div class="section1_tab">
+                    <button class="button_section2">도심</button>
+                    <button class="button_section2">체험</button>
+                    <button class="button_section2">액티비티</button>
+                    <button class="button_section2">역사</button>
+                </div>
+                <p>관심있는 테마를 눌러보세요.</p>
+                <div class="container">
+                    <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                    <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                    <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                    <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                    <div class="slider"><a href="#"></a><img src="" alt=""></div>
+                </div>
+                <button>또 다른 테마 click</button>
+            </div>
+        </section>
+        <div class="banner">
+            <div class="swiper banner_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg1">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>한국관광공사X카카오모빌리티</span>
+                                <strong>여름해변 가볼만할지도💙</strong>
                             </div>
-                            <div class="swiper-prev"><span class="material-symbols-outlined">
-                                    arrow_back_ios
-                                </span></div>
-                            <div class="swiper-next"><span class="material-symbols-outlined">
-                                    arrow_forward_ios
-                                </span></div>
+                            <img src="images/banner3.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg2">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>K드라마 체험 전시(청와대 사랑채, 7.5~11.30)</span>
+                                <strong>K드라마, Love Chapter</strong>
+                            </div>
+                            <img src="images/banner4.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg3">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>한여름밤, 즐기는 대한민국 K-Night Light!</span>
+                                <strong>대한민국 밤밤페스타 2025. 6. 28. ~ 8. 30</strong>
+                            </div>
+                            <img src="images/banner8.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg4">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>총 상금 2,000만원/문화체육관광부장관상 시상</span>
+                                <strong>2025 한국관광 데이터랩 활용 경진대회</strong>
+                            </div>
+                            <img src="images/banner9.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg5 left">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>자전거로 돌아보는 부울경!</span>
+                                <strong>누구나 즐길 수 있는 라이딩 챌린저 모집</strong>
+                            </div>
+                            <img src="images/banner5-1.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg6 right">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>철로 위에 쌓이는 여행의 추억</span>
+                                <strong>온 가족이 함께 즐기는 기차 여행지</strong>
+                            </div>
+                            <img src="images/banner5-2.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg7 left">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>댕댕이도 함께 가요!</span>
+                                <strong>댕댕 여행지도</strong>
+                            </div>
+                            <img src="images/banner6-1.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg8 right">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>데이터로 본 핫플레이스</span>
+                                <strong>뜨는 도시 7</strong>
+                            </div>
+                            <img src="images/banner6-2.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg9 left">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>어디로 떠날지 고민될 때,</span>
+                                <strong>추천!<br>가볼만한 곳.zip</strong>
+                            </div>
+                            <img src="images/banner1-1.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg10 right">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>한국의 맛, 지역에서 찾다!</span>
+                                <strong>K-로컬 미식여행 33선</strong>
+                            </div>
+                            <img src="images/banner1-2.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg11 left">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>여행 갈 때 뭐 입지?</span>
+                                <strong>게임으로 정하는 패션! <br>꾸.온.꾸</strong>
+                            </div>
+                            <img src="images/banner7-1.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg12">
+                        <a href="#">
+                            <div class="text-content right">
+                                <span>명예 주민 대상, 할인 혜택 가득!</span>
+                                <strong>디지털 관광 주민증 <br>발급 받고, 혜택받자!</strong>
+                            </div>
+                            <img src="images/banner7-2.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg13 left">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>로컬의 매력에 풍덩!</span>
+                                <strong>지역 추천 관광지 <br>137선</strong>
+                            </div>
+                            <img src="images/banner2-1.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg14 right">
+                        <a href="#">
+                            <div class="text-content">
+                                <span>한국인이 꼭 가봐야 할</span>
+                                <strong>2025-2026 <br>한국관광 100선</strong>
+                            </div>
+                            <img src="images/banner2-2.png" alt="대한민국밤밤페스타">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        <section class="section3 bgcolor">
+            <div class="inner">
+                <h2>"이번 주말 축제가자!"</h2>
+                <div class="section1_tab">
+                    <p>2025년 <br>7월</p>
+                    <button class="button_section2">첫째주</button>
+                    <button class="button_section2">둘째주</button>
+                    <button class="button_section2">셋째주</button>
+                    <button class="button_section2">넷째주</button>
+                    <button class="button_section2">다섯째주</button>
+                </div>
+                <p>놓치면 1년이나 기다려야하는 그 축제, 축제따라 여행가요
+                    <br>#머드축제 #유채꽃 #불꽃놀이
+                </p>
+                <div class="promotion">
+                    <div class="swiper swiper-container section3_sw">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
                         </div>
-                    </div> <!-- //.promotion -->
-                    <button>더 알아보기</button>
+                        <div class="swiper-prev"><span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span></div>
+                        <div class="swiper-next"><span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span></div>
+                    </div>
+                </div> <!-- //.promotion -->
+                <button>더 알아보기</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="select_area">
+                <div class="alert"><a href="#">[소식][산림청] 계곡 풍덩, 쉼 한모금! 여름철 무더위에는 자연휴양림으로!</a>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-container">
-                <div class="select_area">
-                    <div class="alert"><a href="#">[소식][산림청] 계곡 풍덩, 쉼 한모금! 여름철 무더위에는 자연휴양림으로!</a>
-                    </div>
-                    <div class="select1">
-                        <select>
-                            <option value="" selected>관광정보</option>
-                            <option value="">가이드북</option>
-                            <option value="">베니키아</option>
-                            <option value="">고캠핑</option>
-                            <option value="">두루누비</option>
-                            <option value="">관광불편신고센터</option>
-                            <option value="">공공 와이파이</option>
-                            <option value="">템플스테이</option>
-                            <option value="">국가유산 유유자적</option>
-                            <option value="">세이프스테이</option>
-                            <option value="">관광두레</option>
-                            <option value="">포토코리아</option>
-                            <option value="">TourAPI4.0</option>
-                            <option value="">한국관광 데이터랩</option>
-                            <option value="">한국관광산업포털</option>
-                            <option value="">한국관광콘텐츠랩</option>
-                            <option value="">관광기념품</option>
-                        </select>
-                        <button class="select_button">이동</button>
-                    </div>
-                    <div class="select2 ">
-                        <select>
-                            <option value="" selected>유관기관</option>
-                            <option value="">외교부 해외안전여행</option>
-                            <option value="">대한민국의 아름다운영토 독도</option>
-                            <option value="">한국농어촌공사 웰촌</option>
-                            <option value="">남도여행길잡이</option>
-                            <option value="">한국관광공사 MICE 정보시스템</option>
-                            <option value="">국립현대미술관</option>
-                            <option value="">경기관광플랫폼</option>
-                            <option value="">제주관광공사</option>
-                            <option value="">부산관광공사</option>
-                            <option value="">인천관광공사</option>
-                            <option value="">서울관광재단</option>
-                            <option value="">한국철도공사</option>
-                            <option value="">국립중앙박물관</option>
-                            <option value="">문화체육관광부</option>
-                            <option value="">한국산림복지진흥원</option>
-                            <option value="">한국방문의해위원회</option>
-                            <option value="">문화가 있는 날</option>
-                            <option value="">인문 360º</option>
-                            <option value="">한국도로공사</option>
-                        </select>
-                        <button class="select_button"> 이동</button>
+                <div class="select1">
+                    <select>
+                        <option value="" selected>관광정보</option>
+                        <option value="">가이드북</option>
+                        <option value="">베니키아</option>
+                        <option value="">고캠핑</option>
+                        <option value="">두루누비</option>
+                        <option value="">관광불편신고센터</option>
+                        <option value="">공공 와이파이</option>
+                        <option value="">템플스테이</option>
+                        <option value="">국가유산 유유자적</option>
+                        <option value="">세이프스테이</option>
+                        <option value="">관광두레</option>
+                        <option value="">포토코리아</option>
+                        <option value="">TourAPI4.0</option>
+                        <option value="">한국관광 데이터랩</option>
+                        <option value="">한국관광산업포털</option>
+                        <option value="">한국관광콘텐츠랩</option>
+                        <option value="">관광기념품</option>
+                    </select>
+                    <button class="select_button">이동</button>
+                </div>
+                <div class="select2 ">
+                    <select>
+                        <option value="" selected>유관기관</option>
+                        <option value="">외교부 해외안전여행</option>
+                        <option value="">대한민국의 아름다운영토 독도</option>
+                        <option value="">한국농어촌공사 웰촌</option>
+                        <option value="">남도여행길잡이</option>
+                        <option value="">한국관광공사 MICE 정보시스템</option>
+                        <option value="">국립현대미술관</option>
+                        <option value="">경기관광플랫폼</option>
+                        <option value="">제주관광공사</option>
+                        <option value="">부산관광공사</option>
+                        <option value="">인천관광공사</option>
+                        <option value="">서울관광재단</option>
+                        <option value="">한국철도공사</option>
+                        <option value="">국립중앙박물관</option>
+                        <option value="">문화체육관광부</option>
+                        <option value="">한국산림복지진흥원</option>
+                        <option value="">한국방문의해위원회</option>
+                        <option value="">문화가 있는 날</option>
+                        <option value="">인문 360º</option>
+                        <option value="">한국도로공사</option>
+                    </select>
+                    <button class="select_button"> 이동</button>
+                </div>
+            </div>
+
+            <!-- SNS 섹션 -->
+            <div class="footer-sns">
+                <p class="sns-title">"대한민국 구석구석을 SNS에서 만나 보세요!"</p>
+                <div class="sns-links">
+                    <a href="#" class="sns-link blog">
+                        <img src="images/footer_naverblog.png" alt="블로그">
+                        <span>블로그</span>
+                    </a>
+                    <a href="#" class="sns-link facebook">
+                        <img src="images/footer_facebook.png" alt="페이스북">
+                        <span>페이스북</span>
+                    </a>
+                    <a href="#" class="sns-link twitter">
+                        <img src="images/footer_X.png" alt="엑스">
+                        <span>엑스</span>
+                    </a>
+                    <a href="#" class="sns-link instagram">
+                        <img src="images/footer_Instagram.png" alt="인스타그램">
+                        <span>인스타그램</span>
+                    </a>
+                    <a href="#" class="sns-link kakao">
+                        <img src="images/footer_kakaostory.png" alt="카카오스토리">
+                        <span>카카오스토리</span>
+                    </a>
+                    <a href="#" class="sns-link naver">
+                        <img src="images/footer_naverband.png" alt="네이버밴드">
+                        <span>네이버밴드</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 관련기관 배너 -->
+            <div class="footer-banners">
+                <div class="banner-item">
+                    <img src="images/footer_odii.png" alt="관련기관1">
+                </div>
+                <div class="banner-item">
+                    <img src="images/footer_odii2.gif" alt="관련기관2">
+                </div>
+                <div class="banner-item">
+                    <img src="images/footer_wallpaper.gif" alt="관련기관3">
+                </div>
+                <div class="banner-item">
+                    <img src="images/footer_guidebook.gif" alt="관련기관4">
+                </div>
+                <div class="banner-item">
+                    <img src="images/footer_1330.gif" alt="관련기관5">
+                </div>
+            </div>
+
+            <!-- 기관 정보 -->
+            <div class="footer-info">
+                <div class="info-links">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">위치기반서비스 이용약관</a>
+                    <a href="#">개인위치정보 처리방침</a>
+                    <a href="#">저작권정책</a>
+                    <a href="#">고객서비스현장</a>
+                    <a href="#">전자우편무단수집거부</a>
+                    <a href="#">자주 묻는 질문</a>
+                    <a href="#">찾아오시는 길</a>
+                    <a href="#">사이트맵</a>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info">
+                        <span> 우)010101</span>
+                        <span>강원특별자치도 춘천시 손기정로 15길 25</span>
+                        <span>TEL : 070-0 505-0505</span>
+                        <span>사업자등록번호 : 100-01-05050</span>
+                        <span>통신판매업신고 : 제2022-강원마포-0001호</span>
                     </div>
                 </div>
 
-                <!-- SNS 섹션 -->
-                <div class="footer-sns">
-                    <p class="sns-title">"대한민국 구석구석을 SNS에서 만나 보세요!"</p>
-                    <div class="sns-links">
-                        <a href="#" class="sns-link blog">
-                            <img src="images/footer_naverblog.png" alt="블로그">
-                            <span>블로그</span>
-                        </a>
-                        <a href="#" class="sns-link facebook">
-                            <img src="images/footer_facebook.png" alt="페이스북">
-                            <span>페이스북</span>
-                        </a>
-                        <a href="#" class="sns-link twitter">
-                            <img src="images/footer_X.png" alt="엑스">
-                            <span>엑스</span>
-                        </a>
-                        <a href="#" class="sns-link instagram">
-                            <img src="images/footer_Instagram.png" alt="인스타그램">
-                            <span>인스타그램</span>
-                        </a>
-                        <a href="#" class="sns-link kakao">
-                            <img src="images/footer_kakaostory.png" alt="카카오스토리">
-                            <span>카카오스토리</span>
-                        </a>
-                        <a href="#" class="sns-link naver">
-                            <img src="images/footer_naverband.png" alt="네이버밴드">
-                            <span>네이버밴드</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 관련기관 배너 -->
-                <div class="footer-banners">
-                    <div class="banner-item">
-                        <img src="images/footer_odii.png" alt="관련기관1">
-                    </div>
-                    <div class="banner-item">
-                        <img src="images/footer_odii2.gif" alt="관련기관2">
-                    </div>
-                    <div class="banner-item">
-                        <img src="images/footer_wallpaper.gif" alt="관련기관3">
-                    </div>
-                    <div class="banner-item">
-                        <img src="images/footer_guidebook.gif" alt="관련기관4">
-                    </div>
-                    <div class="banner-item">
-                        <img src="images/footer_1330.gif" alt="관련기관5">
-                    </div>
-                </div>
-
-                <!-- 기관 정보 -->
-                <div class="footer-info">
-                    <div class="info-links">
-                        <a href="#">개인정보처리방침</a>
-                        <a href="#">이용약관</a>
-                        <a href="#">위치기반서비스 이용약관</a>
-                        <a href="#">개인위치정보 처리방침</a>
-                        <a href="#">저작권정책</a>
-                        <a href="#">고객서비스현장</a>
-                        <a href="#">전자우편무단수집거부</a>
-                        <a href="#">자주 묻는 질문</a>
-                        <a href="#">찾아오시는 길</a>
-                        <a href="#">사이트맵</a>
-                    </div>
-
-                    <div class="contact-info">
-                        <div class="info">
-                            <span> 우)010101</span>
-                            <span>강원특별자치도 춘천시 손기정로 15길 25</span>
-                            <span>TEL : 070-0 505-0505</span>
-                            <span>사업자등록번호 : 100-01-05050</span>
-                            <span>통신판매업신고 : 제2022-강원마포-0001호</span>
-                        </div>
-                    </div>
-
-                    <div class="copyright">
-                        <img class="footer_logo" src="images/footer_logo.png" alt="한국관광공사로고">
-                        <div class="related-sites">
-                            <img src="images/footer_tourapi.png" alt="TourAPI 4.0">
-                            <img src="images/footer_wa.png" alt="안전여행">
-                            <img src="images/footer_korea.png" alt="한국관광공사">
-                            <img src="images/footer_travel.png" alt="문화체육관광부">
-                        </div>
+                <div class="copyright">
+                    <img class="footer_logo" src="images/footer_logo.png" alt="한국관광공사로고">
+                    <div class="related-sites">
+                        <img src="images/footer_tourapi.png" alt="TourAPI 4.0">
+                        <img src="images/footer_wa.png" alt="안전여행">
+                        <img src="images/footer_korea.png" alt="한국관광공사">
+                        <img src="images/footer_travel.png" alt="문화체육관광부">
                     </div>
                 </div>
             </div>
-        </footer>
-        <div class="topBtn">↑</div>
+        </div>
+    </footer>
+    <div class="topBtn">↑</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
