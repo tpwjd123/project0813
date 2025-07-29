@@ -40,6 +40,17 @@ let swiperSection1 = new Swiper(".promotion .section1_sw", {
   }
 });
 
+// section2_swiper
+let swiperSection2 = new Swiper(".promotion .section2_sw", {
+  slidesPerView: 5,
+  spaceBetween: 20,
+  centeredSlides: true,      /* 중앙 정렬로 버튼과 정렬 */
+  loop: true,
+  navigation: {
+    prevEl: ".section3_sw .swiper-prev",
+    nextEl: ".section3_sw .swiper-next",
+  },
+});
 // section3_swiper
 let swiperSection3 = new Swiper(".promotion .section3_sw", {
   slidesPerView: 5,
@@ -54,8 +65,8 @@ let swiperSection3 = new Swiper(".promotion .section3_sw", {
 
 // banner_swiper
 let swiperBanner = new Swiper(".banner .banner_swiper", {
+  slidesPerView:2,
   spaceBetween: 0,
-  centeredSlides: true,
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
@@ -99,14 +110,48 @@ topBtn.addEventListener('click', (e) => {
 
 
 // footer 소식
-let alertSwiper = new Swiper(".alertSwiper .swiper-wrapper>.swiper-slide>a ", {
-  direction: "vertical",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  autoplay: {
-        delay: 2500,
+var footerAlert = new Swiper(".alert-swiper", {
+    direction: "vertical",
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: {
+        delay: 3000,
         disableOnInteraction: false,
-      }
+    },
+    loop: true,
+    speed: 800,
+    allowTouchMove: false,
+});
+
+let isAutoplayRunning = true;
+
+// 재생/정지 버튼
+document.querySelector('.alert-play-pause').addEventListener('click', function() {
+    if (isAutoplayRunning) {
+        footerAlert.autoplay.stop();
+        this.innerHTML = '<img src="images/btn_notice_play.png" alt="재생">';
+        isAutoplayRunning = false;
+    } else {
+        footerAlert.autoplay.start();
+        this.innerHTML = '<img src="images/btn_notice_stop.png" alt="정지">';
+        isAutoplayRunning = true;
+    }
+});
+
+// 이전 버튼
+document.querySelector('.alert-prev').addEventListener('click', function() {
+    footerAlert.slidePrev();
+});
+
+// 다음 버튼
+document.querySelector('.alert-next').addEventListener('click', function() {
+    footerAlert.slideNext();
+});
+
+// 더하기 버튼 (필요시 기능 추가)
+document.querySelector('.alert-add').addEventListener('click', function() {
+    // 여기에 더하기 버튼 기능 추가
+    console.log('더하기 버튼 클릭됨');
+    // 예: 새 공지사항 추가 페이지로 이동
+    // window.open('/admin/notice/add', '_blank');
 });
