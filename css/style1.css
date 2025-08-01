@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import url(https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css);
-@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
-@import url(https://fonts.googleapis.com/css2?family=Italiana&display=swap);
-@import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css);
+@import url(https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css);  /* css reset */
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);  /* 스와이퍼 심볼 */
+@import url(https://fonts.googleapis.com/css2?family=Italiana&display=swap); /* 타이틀폰트 */
+@import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css); /* swiper */
+@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);   /* aos */

@@ -15,7 +15,6 @@
     margin: 0;
     padding: 0;
     font-family: 'KoPubWorldDotum', sans-serif;
-
 }
 
 html {
@@ -117,19 +116,30 @@ header {
     display: block;
     padding: 0 1.36em;
     color: #0e0d0d;
-
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .dep1>li>a::after {
-    width: 70px;
-    display: block;
-    content: "";
-    border-bottom: solid 5px hsl(187, 85%, 73%);
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    font-size: 6px;
+    content: "●";
+    color: #dcf5ff;
+    opacity: 0;
+}
 
+.dep1>li>a:hover::after {
+    opacity: 1;
+    width: 100%;
 }
 
 .dep1>li>a:hover {
-    display: block;
+    color: #00d9ff;
+    transform: scale(1.2);
+    font-weight: 500;
 }
 
 
@@ -150,6 +160,8 @@ header {
 
 .dep2 li {
     list-style: none;
+    transition: all 0.5s;
+
     a {
         text-decoration: none;
         color: #0e0d0d;
@@ -157,8 +169,8 @@ header {
 }
 
 .dep2>li>a:hover {
-    color: #0453ff;
-    border-bottom: hsl(244, 97%, 49%) 3px solid;
+    color: #0e0d0d;
+    border-bottom: #09b1ff 3px solid;
 }
 
 
@@ -280,7 +292,7 @@ header {
     color: white;
     line-height: 0.7;
     text-align: center;
-    text-shadow: #333;
+    text-shadow: 2px 2px 5px rgb(196, 196, 196);
 
 }
 
@@ -385,7 +397,7 @@ section {
 
 .promotion {
     width: 100%;
-    height: 300px;
+    height: 350px;
     position: relative;
     margin: 0 auto;
     box-sizing: border-box;
@@ -421,11 +433,13 @@ section {
     text-align: center;
     line-height: 1.75;
     margin-bottom: 90px;
+    text-shadow: 2px 2px 5px rgb(196, 196, 196);
 }
 
 .section1 .title h2 {
     color: #666;
-    font-size: 3.0rem;
+    font-size: 3.2rem;
+    font-weight: 400;
 }
 
 .section1 .title span {
@@ -437,15 +451,20 @@ section {
     font-size: 1.4rem;
 }
 
-.section1_tab {
+.section1 .section_tab {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     gap: 30px;
 }
 
-.btn {
+
+.section1 img:hover {
+    outline: solid 3px rgba(31, 31, 31, 0.76);
+}
+
+.btn_s1 {
     position: relative;
     width: 200px;
     height: 50px;
@@ -458,14 +477,14 @@ section {
     padding: 0;
 }
 
-.btn:hover {
+.btn_s1:hover {
     color: #0066ff;
     background: transparent;
     box-shadow: none;
 }
 
-.btn:before,
-.btn:after {
+.btn_s1:before,
+.btn_s1:after {
     content: '';
     position: absolute;
     top: 0;
@@ -480,15 +499,15 @@ section {
     transition: 400ms ease all;
 }
 
-.btn:after {
+.btn_s1:after {
     right: inherit;
     top: inherit;
     left: 0;
     bottom: 0;
 }
 
-.btn:hover:before,
-.btn:hover:after {
+.btn_s1:hover:before,
+.btn_s1:hover:after {
     width: 100%;
     transition: 800ms ease all;
 }
@@ -502,15 +521,15 @@ section {
     border-radius: 20px;
     background-color: white;
     color: rgb(0, 0, 0);
-    border: 2px solid blue;
+    border: 1px double rgba(255, 196, 0, 0.801);
     box-shadow: 4px 4px 5px 2px #0002;
     transition: all .5s;
 }
 
 .btn2:hover {
-    background-color: #0066ff;
+    background-color: #ff7300;
     color: white;
-    box-shadow: 5px 5px 5px 2px rgba(36, 36, 36, 0.63);
+    box-shadow: 5px 5px 5px 2px rgba(36, 36, 36, 0.137);
 }
 
 
@@ -525,9 +544,43 @@ section {
     height: 300px;
     object-fit: cover;
     border-radius: 20px;
+    box-shadow: 4px 4px 5px 0px #0005;
+    box-sizing: border-box;
+    margin: 10px 0;
 }
 
-/* section2_swiper */
+/* section2 */
+.section2 .title {
+    text-align: left;
+    line-height: 1.75;
+    margin-bottom: 80px;
+    text-shadow: 2px 2px 5px rgb(196, 196, 196);
+}
+
+.section2 .title h2 {
+    color: #666;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+.section2 .title span {
+    color: #ff8a04;
+}
+
+.section2 .title p {
+    color: #666;
+    font-size: 1.6rem;
+}
+
+.section2 .description {
+    position: relative;
+    bottom: 50px;
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+
+}
+
 .section2_sw .swiper-slide>a {
     display: block;
     width: 100%;
@@ -541,20 +594,30 @@ section {
     border-radius: 20px;
 }
 
-
-/* section3_swiper */
-.section3_sw .swiper-slide>a {
-    display: block;
-    width: 100%;
-    height: 100%;
+.section2 .section_tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+    gap: 50px;
 }
 
-.section3_sw .swiper-slide>a img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px;
+
+.btn_s2 {
+    width: 100px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 16px;
+    border: 1px solid lightgray;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 5px 0 #0002;
+
 }
+
+.btn_s2:hover {
+    background-color: #f8f7b5;
+}
+
 
 /* banner 배너영역 */
 
@@ -673,21 +736,101 @@ section {
 
 
 /* section3 */
-
-.section3 .section1_tab p {
-    font-weight: 600;
-    line-height: normal;
+.section3 {
+    position: relative;
 }
 
-.button_section2 {
-    width: 100px;
-    height: 60px;
-    font-size: 16px;
+/* section3_swiper */
+.section3_sw .swiper-slide>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.section3_sw .swiper-slide>a img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 20px;
-    border: 1px solid lightgray;
-    background-color: #ffffff;
 }
 
+
+.section3 .title {
+    text-align: left;
+    line-height: 1.75;
+    margin-bottom: 80px;
+}
+
+.section3 .title h2 {
+    color: #666;
+    font-size: 3.2rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px rgb(196, 196, 196);
+
+}
+
+.section3 .title h2 span {
+    color: #ff04c0;
+}
+
+.section3 .title p {
+    color: #666;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 5px rgb(196, 196, 196);
+
+}
+
+.section3 .description {
+    font-size: 1.2rem;
+    color: #666;
+
+}
+
+/* 버튼 */
+
+.section3 .tab_menu {
+    margin-bottom: 75px;
+    background-color: #c1ddfc;
+    border-radius: 16px;
+    width: 800px;
+    height: 120px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+}
+
+
+.section3 .tab_menu li {
+    list-style: none;
+    background-color: white;
+    width: 100px;
+    height: 90px;
+    margin: 14px;
+    border-radius: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section3 .tab_menu li a {
+    color: #999;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    
+}
+
+.tab_menu>p {
+    width: 15%;
+    height: inherit;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    top: 20px;
+}
 
 /* ======== Footer 스타일 ======== */
 footer {

@@ -63,6 +63,29 @@ let swiperSection3 = new Swiper(".promotion .section3_sw", {
   },
 });
 
+const tabWrapper = document.querySelector('.tab_wrapper');
+const singleTab = () => {
+  const tabCon = document.querySelectorAll('.tab_content>div');
+  const targetLink = document.querySelectorAll('.tab_menu a');
+  targetLink.forEach((el, idx) => {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      targetLink.forEach((els) => {
+        els.classList.remove('active');
+      })
+      e.target.classList.add('active');
+      let orgTarget = e.target.getAttribute('href');
+      tabCon.forEach((el) => {
+        el.style.display = 'none'
+      })
+      document.querySelector(orgTarget).style.display = 'block';
+    })
+  })
+  // forEach 배열의 요소를 한번씩 순회
+
+}
+singleTab()
+
 // banner_swiper
 let swiperBanner = new Swiper(".banner .banner_swiper", {
   slidesPerView:2,
@@ -88,7 +111,7 @@ let topBtn = document.querySelector('.topBtn');
 window.addEventListener('scroll', () => {
   let currentTop = window.scrollY;
   if (currentTop > gnbTop) {
-    gnb.classList.add('sticky')
+    gnb.classList.add('sticky');
   }
   else {
     gnb.classList.remove('sticky')
