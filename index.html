@@ -15,6 +15,8 @@
     <meta property="og:description" content="대한민국 구석구석 리디자인 프로젝트. 국내 여행·축제 정보를 직관적으로 제공하기 위해 UX/UI 디자인을 개선하고, 최신 웹 표준과 반응형 웹 기술로 퍼블리싱한 포트폴리오 사이트입니다.">
     <title>대한민국 구석구석</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- swiperBtn -->
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/style.css">
@@ -29,6 +31,9 @@
         <header>
             <nav class="gnb">
                 <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="로고이미지"></a></h1>
+                <button class="hamburger-menu" aria-label="메뉴 열기">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul class="dep1">
                     <li><a href="#">테마</a>
                         <ul class="dep2">
@@ -67,6 +72,17 @@
                     <li><a class="lang_select" href="#"></a></li>
                 </ul>
                 <div class="w100"></div>
+                
+                <!-- 모바일 메뉴 -->
+                <div class="mobile-menu">
+                    <ul>
+                        <li><a href="#">테마</a></li>
+                        <li><a href="#">지역</a></li>
+                        <li><a href="#">여행코스</a></li>
+                        <li><a href="#">여행정보</a></li>
+                        <li><a href="#">여행혜택</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="header_slide"> <!-- 이미지 메인으로 빼야함 -->
                 <div class="swiper main_Swiper">
@@ -131,7 +147,6 @@
             </div>
 
         </header>
-
         <main>
             <section class="section1 bgcolor">
                 <div class="inner">
@@ -152,14 +167,14 @@
                             <div class="promotion">
                                 <div class="swiper swiper-container section1_sw">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_5.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_6.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_7.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_8.png" alt=""></a></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_5.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_6.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_7.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_8.png" alt=""></div>
                                     </div>
                                     <div class="swiper-prev"><span class="material-symbols-outlined">arrow_back_ios</span></div>
                                     <div class="swiper-next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
@@ -171,16 +186,16 @@
                             <div class="promotion">
                                 <div class="swiper swiper-container section1_sw2">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
                                     </div>
                                     <div class="swiper-prev"><span class="material-symbols-outlined">arrow_back_ios</span></div>
                                     <div class="swiper-next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
@@ -192,15 +207,15 @@
                             <div class="promotion">
                                 <div class="swiper swiper-container section1_sw3">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
                                     </div>
                                     <div class="swiper-prev"><span class="material-symbols-outlined">arrow_back_ios</span></div>
                                     <div class="swiper-next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
@@ -234,11 +249,16 @@
                             <div class="promotion">
                                 <div class="swiper swiper-container section2_sw">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
                                     </div>
                                     <div class="swiper-prev"><span class="material-symbols-outlined">arrow_back_ios</span></div>
                                     <div class="swiper-next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
@@ -250,11 +270,16 @@
                             <div class="promotion">
                                 <div class="swiper swiper-container section2_sw2">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
                                     </div>
                                     <div class="swiper-prev"><span class="material-symbols-outlined">arrow_back_ios</span></div>
                                     <div class="swiper-next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
@@ -266,11 +291,16 @@
                             <div class="promotion">
                                 <div class="swiper swiper-container section2_sw3">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
                                     </div>
                                     <div class="swiper-prev"><span class="material-symbols-outlined">arrow_back_ios</span></div>
                                     <div class="swiper-next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
@@ -282,11 +312,11 @@
                             <div class="promotion">
                                 <div class="swiper swiper-container section2_sw4">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_1.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_2.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_3.jpg" alt=""></a></div>
-                                        <div class="swiper-slide"><a href="#"><img src="images/section1_4.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_2.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/section1_4.jpg" alt=""></div>
                                     </div>
                                     <div class="swiper-prev"><span class="material-symbols-outlined">arrow_back_ios</span></div>
                                     <div class="swiper-next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
@@ -303,130 +333,116 @@
                 <div class="swiper banner_swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide bg1">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>한국관광공사X카카오모빌리티</span>
-                                    <strong>여름해변 가볼만할지도💙</strong>
-                                </div>
-                                <img src="images/banner3.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>한국관광공사X카카오모빌리티</span>
+                                <strong>여름해변 가볼만할지도💙</strong>
+                            </div>
+                            <img src="images/banner3.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg2">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>K드라마 체험 전시(청와대 사랑채, 7.5~11.30)</span>
-                                    <strong>K드라마, Love Chapter</strong>
-                                </div>
-                                <img src="images/banner4.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>K드라마 체험 전시(청와대 사랑채, 7.5~11.30)</span>
+                                <strong>K드라마, Love Chapter</strong>
+                            </div>
+                            <img src="images/banner4.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg3">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>한여름밤, 즐기는 대한민국 K-Night Light!</span>
-                                    <strong>대한민국 밤밤페스타 2025. 6. 28. ~ 8. 30</strong>
-                                </div>
-                                <img src="images/banner8.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>한여름밤, 즐기는 대한민국 K-Night Light!</span>
+                                <strong>대한민국 밤밤페스타 2025. 6. 28. ~ 8. 30</strong>
+                            </div>
+                            <img src="images/banner8.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg4">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>총 상금 2,000만원/문화체육관광부장관상 시상</span>
-                                    <strong>2025 한국관광 데이터랩 활용 경진대회</strong>
-                                </div>
-                                <img src="images/banner9.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>총 상금 2,000만원/문화체육관광부장관상 시상</span>
+                                <strong>2025 한국관광 데이터랩 활용 경진대회</strong>
+                            </div>
+                            <img src="images/banner9.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg5 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>자전거로 돌아보는 부울경!</span>
-                                    <strong>누구나 즐길 수 있는 라이딩 챌린저 모집</strong>
-                                </div>
-                                <img src="images/banner5-1.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>자전거로 돌아보는 부울경!</span>
+                                <strong>누구나 즐길 수 있는 라이딩 챌린저 모집</strong>
+                            </div>
+                            <img src="images/banner5-1.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg6 right">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>철로 위에 쌓이는 여행의 추억</span>
-                                    <strong>온 가족이 함께 즐기는 기차 여행지</strong>
-                                </div>
-                                <img src="images/banner5-2.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>철로 위에 쌓이는 여행의 추억</span>
+                                <strong>온 가족이 함께 즐기는 기차 여행지</strong>
+                            </div>
+                            <img src="images/banner5-2.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg7 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>댕댕이도 함께 가요!</span>
-                                    <strong>댕댕 여행지도</strong>
-                                </div>
-                                <img src="images/banner6-1.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>댕댕이도 함께 가요!</span>
+                                <strong>댕댕 여행지도</strong>
+                            </div>
+                            <img src="images/banner6-1.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg8 right">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>데이터로 본 핫플레이스</span>
-                                    <strong>뜨는 도시 7</strong>
-                                </div>
-                                <img src="images/banner6-2.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>데이터로 본 핫플레이스</span>
+                                <strong>뜨는 도시 7</strong>
+                            </div>
+                            <img src="images/banner6-2.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg9 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>어디로 떠날지 고민될 때,</span>
-                                    <strong>추천!<br>가볼만한 곳.zip</strong>
-                                </div>
-                                <img src="images/banner1-1.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>어디로 떠날지 고민될 때,</span>
+                                <strong>추천!<br>가볼만한 곳.zip</strong>
+                            </div>
+                            <img src="images/banner1-1.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg10 right">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>한국의 맛, 지역에서 찾다!</span>
-                                    <strong>K-로컬 미식여행 33선</strong>
-                                </div>
-                                <img src="images/banner1-2.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>한국의 맛, 지역에서 찾다!</span>
+                                <strong>K-로컬 미식여행 33선</strong>
+                            </div>
+                            <img src="images/banner1-2.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg11 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>여행 갈 때 뭐 입지?</span>
-                                    <strong>게임으로 정하는 패션! <br>꾸.온.꾸</strong>
-                                </div>
-                                <img src="images/banner7-1.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>여행 갈 때 뭐 입지?</span>
+                                <strong>게임으로 정하는 패션! <br>꾸.온.꾸</strong>
+                            </div>
+                            <img src="images/banner7-1.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg12">
-                            <a href="#">
-                                <div class="text-content right">
-                                    <span>명예 주민 대상, 할인 혜택 가득!</span>
-                                    <strong>디지털 관광 주민증 <br>발급 받고, 혜택받자!</strong>
-                                </div>
-                                <img src="images/banner7-2.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content right">
+                                <span>명예 주민 대상, 할인 혜택 가득!</span>
+                                <strong>디지털 관광 주민증 <br>발급 받고, 혜택받자!</strong>
+                            </div>
+                            <img src="images/banner7-2.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg13 left">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>로컬의 매력에 풍덩!</span>
-                                    <strong>지역 추천 관광지 <br>137선</strong>
-                                </div>
-                                <img src="images/banner2-1.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>로컬의 매력에 풍덩!</span>
+                                <strong>지역 추천 관광지 <br>137선</strong>
+                            </div>
+                            <img src="images/banner2-1.png" alt="대한민국밤밤페스타">
                         </div>
                         <div class="swiper-slide bg14 right">
-                            <a href="#">
-                                <div class="text-content">
-                                    <span>한국인이 꼭 가봐야 할</span>
-                                    <strong>2025-2026 <br>한국관광 100선</strong>
-                                </div>
-                                <img src="images/banner2-2.png" alt="대한민국밤밤페스타">
-                            </a>
+
+                            <div class="text-content">
+                                <span>한국인이 꼭 가봐야 할</span>
+                                <strong>2025-2026 <br>한국관광 100선</strong>
+                            </div>
+                            <img src="images/banner2-2.png" alt="대한민국밤밤페스타">
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -456,11 +472,14 @@
                                 <div class="swiper swiper-container section3_sw">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide"><a href="#"><img src="images/section3-1.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="#"><img src="images/section3-1.jpg" alt=""></a></div>
                                         <div class="swiper-slide"><a href="#"><img src="images/section3-2.jpg" alt=""></a></div>
                                         <div class="swiper-slide"><a href="#"><img src="images/section3-3.jpg" alt=""></a></div>
                                         <div class="swiper-slide"><a href="#"><img src="images/section3-4.jpg" alt=""></a></div>
                                         <div class="swiper-slide"><a href="#"><img src="images/section3-5.png" alt=""></a></div>
                                         <div class="swiper-slide"><a href="#"><img src="images/section3-6.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="#"><img src="images/section3-6.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="#"><img src="images/section3-7.jpg" alt=""></a></div>
                                         <div class="swiper-slide"><a href="#"><img src="images/section3-7.jpg" alt=""></a></div>
                                         <div class="swiper-slide"><a href="#"><img src="images/section3-10.png" alt=""></a></div>
                                     </div>
@@ -696,7 +715,8 @@
     </div> <!-- //.wrap -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/tab_slide.js"></script>
+    <script src="js/tab_slide.js"></script>
 </body>
 
 </html>
